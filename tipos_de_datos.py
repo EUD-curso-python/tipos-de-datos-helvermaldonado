@@ -5,159 +5,227 @@ data = ('  GARCIA,gonzalez,        rodriguez  ,FERNANDEZ ,LOPEZ,martinez ,  sanc
 """Dividir el string contenido en la variable `data` en donde se encuentre el 
 primer caracter `\n` y guardar el resultado en una variable llamada `var1`.
 """
+var1=data.split('\n', 2)
 
+#print ('ejercicio 1 HM',var1[0] )
 
 """Guardar el primer elemento de la variable `var1` en una variable llamada 
 `apellidos` y el segundo elemento en una llamada `decimales`.
 """
-
+apellidos=var1[0]
+decimales=var1[1]
+#print ('ejercicio 2', 'apellidos:', apellidos , '/n /n /n decimales:',decimales )
 
 """Dividir el string contenido en la variable `apellidos` en donde se encuentre el 
 el caracter `,` y guardar el resultado en una variable llamada `apellidos_list`.
 """
-
+apellidos_list=apellidos.split(',')
+#print ('ejercicio 3 HM',apellidos_list[1] )
 
 """Dividir el string contenido en la variable `decimales` en donde se encuentre el 
 el caracter `;` y guardar el resultado en una variable llamada `decimales_list`.
 """
-
+decimales_list=decimales.split(';')
+#print ('ejercicio 4 HM',decimales_list[1] )
 
 """Obtener el elemento en la posición 38 de `decimales_list`, procesarlo para 
 convertirlo en un entero y guardarlo en variable `var2`.
 """
-
+var2=decimales_list[38]
+var2=float(var2)
+var2=int(var2)
+#print ('ejercicio 5 HM', var2 )
 
 """Obtener el valor en la posición que indique dicho entero (`var2`) de la lista 
 `apellidos_list`. Guardar el resultado en variable `apellido`.
 """
-
+apellido=apellidos_list[var2]
+#print ('ejercicio 6 HM', apellido )
 
 """obtener la longitud (cantidad de caracteres) de la variable `apellido` y 
 guardar el resultado en `len_apellido`.
 """
-
+len_apellido=len(apellido)
+len_apellido=len(apellido)
+#print ('ejercicio 7 HM', apellido )
 
 """Remover los espacios en blanco que hayan en la variable `apellido` y guardar 
 resultado en `apellido2`.
 """
-
+apellido2= apellido.strip()
+#print ('ejercicio 8 HM', apellido2 )
 
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
-
+apellido_es_mayuscula=apellido2.isupper()
+#print ('ejercicio 9 HM', apellido_es_mayuscula )
 
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
-
+apellido3=apellido2.upper()
+#print ('ejercicio 10 HM', apellido3 )
 
 """Crear variable `a_in_apellido` que contenga la cantidad de letras "a" que contiene 
 la variable `apellido2`.
 """
+a_in_apellido=apellido2.count('a')
+#print ('ejercicio 11 HM', a_in_apellido )
 
 
 """Crear variable `apellido_end_ez` que contenga si la variable `apellido2` 
 termina con el string `"ez"`.
 """
+apellido_end_ez=apellido2.endswith('ez')
+apellido2
+#print ('ejercicio 12 HM', apellido_end_ez )
 
 
 """Crear tupla llamada `apellidos_tuple` que contenga los elementos desde el 49 
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
-
+apellidos_tuple=apellidos_list[49:23:-2 ]
+#print ('ejercicio 13 HM', apellidos_tuple[0])
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
 posición 78 de la lista `apellidos_list`.
 """
+apellidos_list2=apellidos_tuple
+#print('ejercicio 15 HM', apellidos_list2)
 
+apellidos_list2.append(apellidos_list[78])
+
+#print('ejercicio 15 modificado HM', apellidos_list2)
 
 """Eliminar el 4to elemento de la variable `apellidos_list2`.
 """
+del apellidos_list2[3]
 
+#print('ejercicio 16 del HM', apellidos_list2)
 
 """Eliminar el elemento igual a "  MORALES" de la variable `apellidos_list2`.
 """
+apellidos_list2.remove('  MORALES')
 
+#print( 'ejercicio 17', apellidos_list2)
 
 """Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del
 elemento 56 al 70 de la variable `apellidos_list`.
 """
+apellidos_list2=apellidos_list2+apellidos_list[56:70]
+#print( 'ejercicio 18', apellidos_list2)
 
 
 """Invertir el orden actual de la variable `apellidos_list2`.
 """
-
+reversa=apellidos_list2.reverse()
+#print( 'ejercicio 19', reversa)
 
 """Crear variable `apellidos_set1` con los elementos del 56 al 66 de la 
 variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del 
 62 al 76 de la variable `apellidos_list`.
 """
+apellidos_set1=set (apellidos_list[56:66])
+apellidos_set2=set (apellidos_list[62:76])
 
+#set([1,32,4])
+
+#print( 'Ejercicio 20' , apellidos_set1)
+#print( 'ejercicio 21',  apellidos_set1)
 
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
 variable `apellidos_list`.
 """
 
+apellidos_set1.add( apellidos_list[67])
+#print( 'ejercicio 22',  apellidos_set1)
+
 
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
 variable `apellidos_list`.
 """
+apellidos_set1.update( apellidos_list[68:70])
+#print( 'ejercicio 23',  apellidos_set1)
+
 
 
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
 """
 
+apellidos_set1.remove(' CAMPOS  ')
+#print('ejercicio 24 ', apellidos_set1)
 
 """Crear la variable `apellidos_set3` con la intersección entre `apellidos_set1` 
 y `apellidos_set2`.
 """
 
+apellidos_set3 = apellidos_set1 & apellidos_set2
+#print( 'ejercicio 25' , apellidos_set3)
 
 """Crear la variable `apellidos_set4` con la unión entre `apellidos_set1` y 
 `apellidos_set2`.
 """
-
+apellidos_set4 = apellidos_set1 | apellidos_set2
+#print( 'ejercicio 25' , apellidos_set4)
 
 """Crear la variable `apellidos_set5` con la diferencia de `apellidos_set1` menos 
 `apellidos_set2`.
 """
-
+apellidos_set5 = apellidos_set1 - apellidos_set2
+#print( 'ejercicio 25' , apellidos_set5)
 
 """Crear la variable `apellidos_set5` con la diferencia simétrica entre 
 `apellidos_set1` y `apellidos_set2`.
 """
 
+apellidos_set5 = apellidos_set1 ^ apellidos_set2
+#print( 'ejercicio siemtrica' , apellidos_set5)
 
 """Crear la variable `var3` con la respuesta a la pregunta de si `apellidos_set3` 
 es un subconjunto de `apellidos_set1`.
 """
-
+var3= apellidos_set3.issubset(apellidos_set1)
+#print('es subconjunto', var3)
 
 """Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista
 del 0 al 4 de la lista `apellidos_lista`.
 """
 
+apellidos_dict = dict.fromkeys(apellidos_list[0:4])
+#print('dict from key', apellidos_dict)
+
 
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
 """
+#d={"key1": 12, "key2": 24}
+apellidos_dict.update({"key1": 12, "key2": 24, })
 
+#print('update from var key', apellidos_dict)
 
 """Asignar el valor del entero `34` a la llave "gonzalez" en el diccionario 
 `apellidos_dict`.
 """
 
+apellidos_dict["gonzalez"]=34
+
+#print('update from var key', apellidos_dict)
 
 """Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_gonzalez`.
 """
 
+#apellido_gonzalez=apellidos_dict.keys("gonzalez")
+
+apellido_gonzalez=apellidos_dict["gonzalez"]
+#print("apeliido gonzalez", apellido_gonzalez)
 
 """Sacar el valor de la llave "no_existe" del diccionario `apellidos_dict` y 
 guardarlo en la variable `apellido_none`.
 """
-
-
+print(apellidos_dict)
+apellido_none=apellidos_dict.get("no_existe")
+print("apellido none" , apellido_none)
