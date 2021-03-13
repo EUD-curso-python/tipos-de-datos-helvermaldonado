@@ -96,11 +96,11 @@ posición 78 de la lista `apellidos_list`.
 """
 
 apellidos_list2  =list(apellidos_tuple)
-print('ejercicio 15 HM', apellidos_list2)
+#print('ejercicio 15 HM', apellidos_list2)
 
 apellidos_list2.append(apellidos_list[78])
 
-#print('ejercicio 15 modificado HM', apellidos_list2)
+print('ejercicio 15 modificado HM', apellidos_list2)
 
 """Eliminar el 4to elemento de la variable `apellidos_list2`.
 """
