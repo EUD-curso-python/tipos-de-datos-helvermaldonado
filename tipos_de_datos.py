@@ -86,15 +86,17 @@ apellido2
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
-apellidos_tuple=apellidos_list[49:23:-1 ]
-#print ('ejercicio 13 HM', apellidos_tuple[0])
+
+apellidos_tuple=tuple(apellidos_list[49:23:-1] )
+#print ('ejercicio 13 HM', apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
 posición 78 de la lista `apellidos_list`.
 """
-apellidos_list2=apellidos_tuple
-#print('ejercicio 15 HM', apellidos_list2)
+
+apellidos_list2  =list(apellidos_tuple)
+print('ejercicio 15 HM', apellidos_list2)
 
 apellidos_list2.append(apellidos_list[78])
 
@@ -147,7 +149,7 @@ apellidos_set1.add( apellidos_list[67])
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
 variable `apellidos_list`.
 """
-apellidos_set1.update( apellidos_list[68:70])
+apellidos_set1.update( apellidos_list[67:70]) #le agregue el 67 por lo q no es inclusivo
 #print( 'ejercicio 23',  apellidos_set1)
 
 
@@ -163,7 +165,7 @@ y `apellidos_set2`.
 """
 
 apellidos_set3 = apellidos_set1 & apellidos_set2
-#print( 'ejercicio 25' , apellidos_set3)
+#print( 'ejercicio interseccion 25' , apellidos_set3)
 
 """Crear la variable `apellidos_set4` con la unión entre `apellidos_set1` y 
 `apellidos_set2`.
@@ -195,7 +197,7 @@ del 0 al 4 de la lista `apellidos_lista`.
 """
 
 apellidos_dict = dict.fromkeys(apellidos_list[0:4])
-#print('dict from key', apellidos_dict)
+print('dict from key', apellidos_dict)
 
 
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
