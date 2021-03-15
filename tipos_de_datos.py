@@ -87,7 +87,7 @@ al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
 #print(apellidos_list[48])
-apellidos_tuple=tuple(apellidos_list[47:21:-1] )
+apellidos_tuple=tuple(apellidos_list[48:24:-1] )
 print ('ejercicio 13 apellidos_tuple HM', apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
