@@ -117,7 +117,7 @@ apellidos_list2.remove('  MORALES')
 """Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del
 elemento 56 al 70 de la variable `apellidos_list`.
 """
-apellidos_list2=apellidos_list2+apellidos_list[56:70]
+apellidos_list2=apellidos_list2+apellidos_list[56:71:1]
 #print( 'ejercicio 18', apellidos_list2)
 
 
