@@ -203,9 +203,9 @@ print('dict from key', apellidos_dict)
 """Agregar el siguiente diccionario: {"key1": 12, "key2": 24} al diccionario  
 `apellidos_dict`.
 """
-#d={"key1": 12, "key2": 24}
-apellidos_dict.update({"key1": 12, "key2": 24, })
-
+d={"key1": 12, "key2": 24}
+#apellidos_dict.update({"key1": 12, "key2": 24, })
+apellidos_dict.update(d)
 #print('update from var key', apellidos_dict)
 
 """Asignar el valor del entero `34` a la llave "gonzalez" en el diccionario 
