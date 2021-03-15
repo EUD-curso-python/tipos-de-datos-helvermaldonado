@@ -98,7 +98,7 @@ posición 78 de la lista `apellidos_list`.
 apellidos_list2  =list(apellidos_tuple)
 #print('ejercicio 15 HM', apellidos_list2)
 
-apellidos_list2.append(apellidos_list[78])
+apellidos_list2.append(apellidos_list[77])
 
 #print('ejercicio 15 modificado HM', apellidos_list2)
 
