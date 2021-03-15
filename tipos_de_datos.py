@@ -53,7 +53,7 @@ len_apellido=len(apellido)
 resultado en `apellido2`.
 """
 apellido2= apellido.strip()
-print ('ejercicio 8 HM', apellido2 )
+#print ('ejercicio 8 HM', apellido2 )
 
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
@@ -86,9 +86,9 @@ apellido2
 al 23 (en orden invertido), saltandose de a 1 elemento (49, 47, 45 , etc) de la
 lista `apellidos_list`.
 """
-
-apellidos_tuple=tuple(apellidos_list[49:23:-1] )
-#print ('ejercicio 13 HM', apellidos_tuple)
+#print(apellidos_list[48])
+apellidos_tuple=tuple(apellidos_list[48:21:-1] )
+print ('ejercicio 13 apellidos_tuple HM', apellidos_tuple)
 
 """Crear variable `apellidos_list2` que contenga una copia de `apellidos_tuple` 
 (con las conversiones que sean necesarias) y agregarle el elemento de la 
@@ -100,7 +100,7 @@ apellidos_list2  =list(apellidos_tuple)
 
 apellidos_list2.append(apellidos_list[78])
 
-print('ejercicio 15 modificado HM', apellidos_list2)
+#print('ejercicio 15 modificado HM', apellidos_list2)
 
 """Eliminar el 4to elemento de la variable `apellidos_list2`.
 """
